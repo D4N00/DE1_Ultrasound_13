@@ -27,7 +27,7 @@ Zařízení vyšle ultrazvukový pulz pomocí senzoru HC-SR04, změří dobu ná
 
 ## Použitý hardware
 
-- **FPGA deska:** Nexys A7 (Xilinx Artix-7)
+- **FPGA deska:** Nexys A7 50 (Xilinx Artix-7)
 - **Senzor:** HC-SR04 (ultrazvukový, rozsah 2–400 cm)
 
 ---
@@ -49,14 +49,13 @@ Zařízení vyšle ultrazvukový pulz pomocí senzoru HC-SR04, změří dobu ná
 
 ## Simulace
 
-> Sem vložte screenshoty z Vivado Waveform simulátoru (přidejte po dokončení simulací).
+> 
 
 ---
 
 ## Resource Report
 
-> Sem vložte tabulku využití zdrojů ze syntézy v Vivadu (LUTs, FFs atd.).
-
+> 
 ---
 
 ## Použité nástroje
@@ -68,8 +67,8 @@ Zařízení vyšle ultrazvukový pulz pomocí senzoru HC-SR04, změří dobu ná
 
 ## Autoři
 
-- **[Jméno 1]** – [role, např. HC_SR04_CTL modul]
-- **[Jméno 2]** – [role, např. display_driver modul]
+- **[Daniel Viskup]** – []
+- **[Vít Uhlíř]** – [l]
 
 ---
 
