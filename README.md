@@ -43,7 +43,7 @@ Zařízení vyšle ultrazvukový pulz pomocí senzoru HC-SR04, změří dobu ná
 | `btnd` | vstup | Spuštění měření |
 | `hcechopin` | vstup | Echo signál ze senzoru HC-SR04 |
 | `hctrigpin` | výstup | Trigger pulz pro senzor HC-SR04 |
-| `seg(6:0)` | výstup | Segmenty 7-segmentového displeje |
+| `seg(2:0)` | výstup | Segmenty 7-segmentového displeje |
 | `an(4:0)` | výstup | Anody 7-segmentového displeje |
 | `dp` | výstup | Desetinná tečka (neaktivní) |
 
