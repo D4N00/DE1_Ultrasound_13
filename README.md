@@ -13,7 +13,7 @@ Zařízení vyšle ultrazvukový pulz pomocí senzoru HC-SR04, změří dobu ná
 
 ## Blokové schéma
 
-![Blokové schéma](Ultrasound_top(1).png)
+![Blokové schéma](ultsound_top.png)
 
 ### Moduly
 
