@@ -60,8 +60,9 @@ Zařízení vyšle ultrazvukový pulz pomocí senzoru HC-SR04, změří dobu ná
 
 ## Použité nástroje
 
-- Xilinx Vivado 2025.2
+- Vivado
 - VHDL
+- Claude
 
 ---
 
