@@ -1,6 +1,6 @@
 # Ultrazvukový měřič vzdálenosti – HC-SR04
 
-Projekt v rámci předmětu digitální návrh na FPGA (Nexys A7 50).  
+Projekt v rámci předmětu DE1, digitální návrh na FPGA (Nexys A7 50).  
 Měření vzdálenosti pomocí ultrazvukového senzoru HC-SR04 se zobrazením výsledku na 7-segmentovém displeji.
 
 ---
