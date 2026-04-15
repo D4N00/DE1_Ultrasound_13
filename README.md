@@ -1,6 +1,6 @@
 # Ultrazvukový měřič vzdálenosti – HC-SR04
 
-Projekt v rámci předmětu DE1, digitální návrh na FPGA (Nexys A7 50).  
+Projekt v rámci předmětu digitální návrh na FPGA (Nexys A7 50).  
 Měření vzdálenosti pomocí ultrazvukového senzoru HC-SR04 se zobrazením výsledku na 7-segmentovém displeji.
 
 ---
@@ -20,8 +20,10 @@ Zařízení vyšle ultrazvukový pulz pomocí senzoru HC-SR04, změří dobu ná
 | Modul | Popis |
 |---|---|
 | `debounce` | Odstraňuje zákmity tlačítka (`btnd`), generuje čistý signál `btn_press` |
-| `HC_SR04_CTL` | Řídí senzor – generuje `trig` pulz, měří délku `echo`, vypočítá vzdálenost |
-| `display_driver` | Zobrazuje naměřenou hodnotu na 7-segmentovém displeji (`seg`, `an`) |
+| `HC_SR04_CTL` | Řídí senzor – generuje trigger pulz, měří délku `echo`, výstup `echo_time(15:0)` |
+| `dist_calc` | Přepočítá naměřený čas `echo_time` na vzdálenost v cm, výstup `dist(8:0)` |
+| `bin_to_bcd` | Převede binární vzdálenost na BCD formát pro displej, výstup `bcd(11:0)` |
+| `display_driver` | Zobrazuje naměřenou hodnotu na 7-segmentovém displeji (`seg`, `anode`) |
 
 ---
 
@@ -39,37 +41,37 @@ Zařízení vyšle ultrazvukový pulz pomocí senzoru HC-SR04, změří dobu ná
 | `clk` | vstup | Systémové hodiny |
 | `btnu` | vstup | Reset |
 | `btnd` | vstup | Spuštění měření |
-| `trig` | výstup | Trigger pulz pro senzor |
-| `echo` | vstup | Echo signál ze senzoru |
-| `seg(6:0)` | výstup | Segmenty displeje |
-| `an(4:0)` | výstup | Anody displeje |
+| `hcechopin` | vstup | Echo signál ze senzoru HC-SR04 |
+| `hctrigpin` | výstup | Trigger pulz pro senzor HC-SR04 |
+| `seg(6:0)` | výstup | Segmenty 7-segmentového displeje |
+| `an(4:0)` | výstup | Anody 7-segmentového displeje |
 | `dp` | výstup | Desetinná tečka (neaktivní) |
 
 ---
 
 ## Simulace
 
-> 
+
 
 ---
 
 ## Resource Report
 
-> 
+
+
 ---
 
 ## Použité nástroje
 
-- Vivado
+- Xilinx Vivado 2025.2
 - VHDL
-- Claude
 
 ---
 
 ## Autoři
 
-- **[Daniel Viskup]** – []
-- **[Vít Uhlíř]** – []
+- **Daniel Viskup** – []
+- **Vít Uhlíř** – []
 
 ---
 
