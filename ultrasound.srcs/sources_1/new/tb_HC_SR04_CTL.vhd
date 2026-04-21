@@ -17,7 +17,7 @@ architecture tb of tb_HC_SR04_CTL is
               start    : in std_logic;
               trig     : out std_logic;
               echo     : in std_logic;
-              distance : out std_logic_vector (16 downto 0));
+              echo_time : out std_logic_vector (15 downto 0));
     end component;
 
     signal clk      : std_logic;
@@ -25,9 +25,9 @@ architecture tb of tb_HC_SR04_CTL is
     signal start    : std_logic;
     signal trig     : std_logic;
     signal echo     : std_logic;
-    signal distance : std_logic_vector (16 downto 0);
+    signal echo_time : std_logic_vector (15 downto 0);
 
-    constant TbPeriod : time := 1000 ns; -- ***EDIT*** Put right period here
+    constant TbPeriod : time := 10 ns; -- ***EDIT*** Put right period here
     signal TbClock : std_logic := '0';
     signal TbSimEnded : std_logic := '0';
 
@@ -39,7 +39,7 @@ begin
               start    => start,
               trig     => trig,
               echo     => echo,
-              distance => distance);
+              echo_time => echo_time);
 
     -- Clock generation
     TbClock <= not TbClock after TbPeriod/2 when TbSimEnded /= '1' else '0';
@@ -56,24 +56,46 @@ begin
         -- Reset generation
         -- ***EDIT*** Check that rst is really your reset signal
         rst <= '1';
-        wait for 100 ns;
+        wait for 1000 ns;
         rst <= '0';
-        wait for 100 ns;
+        wait for 1000 ns;
         
         
         start <= '1';
-        wait for 100 ns;
+        wait for 1000 ns;
         start <= '0';
         
-        wait for 40us;
+        wait for 200us;
         
         echo <= '1';
         wait for 250us;
         echo <= '0';
         
+        wait for 250us;
+        
+        -- another measurement
+        rst <= '1';
+        wait for 100 ns;
+        rst <= '0';
+        wait for 1000 ns;
+        
+        start <= '1';
+        wait for 100 ns;
+        start <= '0';
+        
+        wait for 200us;
+        
+        echo <= '1';
+        wait for 345us;
+        echo <= '0';
+        
+        wait for 250us;
+        
+        
+        
             
         -- ***EDIT*** Add stimuli here
-        wait for 100 * TbPeriod;
+        wait for 10000 * TbPeriod;
 
         -- Stop the clock and hence terminate the simulation
         TbSimEnded <= '1';

@@ -1,18 +1,3 @@
-----------------------------------------------------------------------------------
-
--- Create Date: 08.04.2026 14:31:45
--- Module Name: HC_SR04_CTL - Behavioral
--- Project Name: Ultrasound 13
--- Target Devices: Nexys A7-50T
--- Description: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -31,7 +16,7 @@ entity HC_SR04_CTL is
            start : in STD_LOGIC;
            trig : out STD_LOGIC;
            echo : in STD_LOGIC;
-           distance : out STD_LOGIC_VECTOR (16 downto 0));
+           echo_time : out STD_LOGIC_VECTOR (15 downto 0));
 
            
 end HC_SR04_CTL;
@@ -39,13 +24,14 @@ end HC_SR04_CTL;
 architecture Behavioral of HC_SR04_CTL is
     
     constant CLK_FREQ : integer := 100_000_000;             -- System clock frequency (100 MHz)
-    constant trig_count : integer := CLK_FREQ/1000 * 15;    -- Enter the trigger time here (15us) 
+    constant trig_count : integer := CLK_FREQ/1000000 * 15;    -- Enter the trigger time here (15us) 
+
     
     -- FSM state definitions
     type state_type is (IDLE, SEND_TRIG, WAIT_ECHO, CNT_ECHO, CALC);
     signal current_state : state_type;
 
-    signal clock_count : integer range 0 to 999_999_999;
+    signal clock_count : unsigned (15 downto 0); --integer range 0 to 999_999_999;
     
     
 begin
@@ -56,8 +42,8 @@ begin
                 -- Reset state, outputs, and all internal signals
                 current_state     <= IDLE;             -- Start in IDLE state
                 trig              <= '0';              -- disable trigger
-                distance          <= (others => '0');  -- reset distance output
-                clock_count       <= 0;                -- reset the counter
+                echo_time          <= (others => '0');  -- reset distance output
+                clock_count       <= (others => '0');                -- reset the counter
 
             else
                 case current_state is
@@ -68,7 +54,7 @@ begin
 
                         if start = '1' then
                             trig <= '1';                -- trigger the sensor
-                            clock_count <= 0;           -- reset the counter
+                            clock_count <= (others => '0');           -- reset the counter
                             current_state <= SEND_TRIG; -- move to SEND_TRIG state
                         end if;
 
@@ -77,7 +63,7 @@ begin
                           
                         if clock_count  >=  trig_count then
                             trig <= '0';                    -- end the trigger pulse
-                            clock_count   <= 0;             -- Reset clock count
+                            clock_count   <= (others => '0');             -- Reset clock count
                             current_state <= WAIT_ECHO;     -- move to WAIT_ECHO state
                         else
                             clock_count <= clock_count + 1; --increment the clock counter
@@ -88,7 +74,7 @@ begin
                     when WAIT_ECHO =>
 
                         if echo = '1' then
-                            clock_count   <= 0;         -- Reset clock count
+                            clock_count   <= (others => '0');         -- Reset clock count
                             current_state <= CNT_ECHO;  -- move to CNT_ECHO state
                         end if;
                             
@@ -98,8 +84,8 @@ begin
                         if echo = '1' then
                             clock_count <= clock_count + 1; --increment the clock counter   
                         else
-                            distance <= std_logic_vector(to_unsigned((clock_count/CLK_FREQ/1000), 16)); -- distance is for now equal to echo round trip time in us
-                            clock_count   <= 0;             -- Reset clock count
+                            echo_time <= std_logic_vector(clock_count/(CLK_FREQ/1000000)); -- distance is for now equal to echo round trip time in us
+                            clock_count   <= (others => '0');              -- Reset clock count
                             current_state <= IDLE;     -- move to WAIT_ECHO state
                         end if; 
                         
