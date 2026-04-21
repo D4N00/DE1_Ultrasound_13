@@ -53,7 +53,7 @@ Zařízení vyšle ultrazvukový pulz pomocí senzoru HC-SR04, změří dobu ná
 
 ### `dist_calc` (us_to_cm)
 
-![Simulace dist_calc](dist_calc_sim_pic.png)
+![Simulace dist_calc](sim_outputs/dist_calc_sim_pic.png)
 
 Modul přepočítává dobu trvání echa v mikrosekundách na vzdálenost v centimetrech (dělení hodnotou 58). Simulace ověřuje tři testovací případy:
 - `0x003a` (58 µs) → `0x001` (1 cm)
@@ -66,7 +66,7 @@ Signál `busy` je aktivní po dobu výpočtu, `done` vydá jednoclockový pulz p
 
 ### `HC_SR04_CTL`
 
-![Simulace HC_SR04_CTL](tb_HC_SR04_CTL.png)
+![Simulace HC_SR04_CTL](sim_outputs/tb_HC_SR04_CTL.png)
 
 Modul řídí komunikaci se senzorem HC-SR04 – generuje trigger pulz a měří délku echo signálu. Výstup `echo_time` udává naměřený čas v µs. Simulace ukazuje dvě měření:
 - První echo → `echo_time = 249`
@@ -76,7 +76,7 @@ Modul řídí komunikaci se senzorem HC-SR04 – generuje trigger pulz a měří
 
 ### `bin_to_bcd`
 
-![Simulace bin_to_bcd](bin_to_bcd_sim_pic.png)
+![Simulace bin_to_bcd](sim_outputs/bin_to_bcd_sim_pic.png)
 
 Kombinační modul převádí 9-bitové binární číslo na BCD formát (stovky, desítky, jednotky) pomocí algoritmu Double Dabble. Simulace ověřuje převod hodnot:
 - `0x000` (0) → `000`
