@@ -90,7 +90,7 @@ Kombinační modul převádí 9-bitové binární číslo na BCD formát (stovky
 
 ## Resource Report
 
-> Sem vložte tabulku využití zdrojů ze syntézy v Vivadu (LUTs, FFs atd.).
+
 
 ---
 
