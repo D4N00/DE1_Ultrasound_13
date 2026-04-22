@@ -104,8 +104,8 @@ Kombinační modul převádí 9-bitové binární číslo na BCD formát (stovky
 
 ## Autoři
 
-- **Daniel Viskup** – []
-- **Vít Uhlíř** – []
+- **Daniel Viskup** – [HC_SR04_CTL, HC_SR04_CTL_tb, dist_calc, ultrasound_top]
+- **Vít Uhlíř** – [bin_to_bcd, bin_to_bcd_tb, dist_calc_tb, GitHub]
 
 ---
 
