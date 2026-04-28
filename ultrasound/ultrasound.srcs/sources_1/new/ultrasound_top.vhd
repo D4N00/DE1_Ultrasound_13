@@ -47,7 +47,7 @@ architecture Behavioral of ultrasound_top is
     component us_to_cm is
         port (
             clk      : in  std_logic;
-            rst_n    : in  std_logic;                       -- async active-low reset
+            rst      : in  std_logic;                       -- async active-low reset
             start    : in  std_logic;                       -- 1-cycle pulse: latch input & begin
             time_us  : in  std_logic_vector(15 downto 0);  -- microseconds (unsigned)
             busy     : out std_logic;                       -- '1' while dividing
@@ -96,24 +96,24 @@ begin
             start     => sig_start,
             trig      => hctrigpin,
             echo      => hcechopin,
-            echo_time => sig_time, --sig_time
+            echo_time => sig_time, 
             start_conv => sig_start_conv
         ); 
         
     us_to_cm_inst : us_to_cm
         port map (
             clk       => clk,
-            rst_n     => btnd,
+            rst       => btnd,
             start     => sig_start_conv,
             busy      => open,
             done      => open,
             time_us   => sig_time,
-            distance  => open --sig_dist
+            distance  => sig_dist
         );     
         
      bin_to_bcd_inst: bin_to_bcd
         port map(
-            bin => sig_time(8 downto 0), --sig_dist
+            bin => sig_dist, --sig_time(8 downto 0)
             bcd => sig_bcd
         );   
      
