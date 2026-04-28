@@ -21,7 +21,7 @@ Zařízení vyšle ultrazvukový pulz pomocí senzoru HC-SR04, změří dobu ná
 |---|---|
 | `debounce` | Odstraňuje zákmity tlačítka (`btnd`), generuje čistý signál `btn_press` |
 | `HC_SR04_CTL` | Řídí senzor – generuje trigger pulz, měří délku `echo`, výstup `echo_time(15:0)` |
-| `dist_calc` | Přepočítá naměřený čas `echo_time` na vzdálenost v cm, výstup `dist(8:0)` |
+| `us_to_cm` | Přepočítá naměřený čas `echo_time` na vzdálenost v cm, výstup `dist(8:0)` |
 | `bin_to_bcd` | Převede binární vzdálenost na BCD formát pro displej, výstup `bcd(11:0)` |
 | `display_driver` | Zobrazuje naměřenou hodnotu na 7-segmentovém displeji (`seg`, `anode`) |
 
@@ -41,8 +41,8 @@ Zařízení vyšle ultrazvukový pulz pomocí senzoru HC-SR04, změří dobu ná
 | `clk` | vstup | Systémové hodiny |
 | `btnu` | vstup | Reset |
 | `btnd` | vstup | Spuštění měření |
-| `hcechopin` | vstup | Echo signál ze senzoru HC-SR04 |
-| `hctrigpin` | výstup | Trigger pulz pro senzor HC-SR04 |
+| `g18` | vstup | Echo signál ze senzoru HC-SR04 |
+| `g17` | výstup | Trigger pulz pro senzor HC-SR04 |
 | `seg(6:0)` | výstup | Segmenty 7-segmentového displeje |
 | `an(4:0)` | výstup | Anody 7-segmentového displeje |
 | `dp` | výstup | Desetinná tečka (neaktivní) |
