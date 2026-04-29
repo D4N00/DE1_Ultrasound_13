@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="us_to_cm_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="us_to_cm_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="942.955 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,425.409 ns"></ZoomEndTime>
+      <Cursor1Time time="1,345.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="315"></NameColumnWidth>
+      <ValueColumnWidth column_width="125"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/us_to_cm_tb/clk_s" type="logic">
+      <obj_property name="ElementShortName">clk_s</obj_property>
+      <obj_property name="ObjectShortName">clk_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/us_to_cm_tb/rst_s" type="logic">
+      <obj_property name="ElementShortName">rst_s</obj_property>
+      <obj_property name="ObjectShortName">rst_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/us_to_cm_tb/start_s" type="logic">
+      <obj_property name="ElementShortName">start_s</obj_property>
+      <obj_property name="ObjectShortName">start_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/us_to_cm_tb/time_us_s" type="array">
+      <obj_property name="ElementShortName">time_us_s[15:0]</obj_property>
+      <obj_property name="ObjectShortName">time_us_s[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">0</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/us_to_cm_tb/busy_s" type="logic">
+      <obj_property name="ElementShortName">busy_s</obj_property>
+      <obj_property name="ObjectShortName">busy_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/us_to_cm_tb/done_s" type="logic">
+      <obj_property name="ElementShortName">done_s</obj_property>
+      <obj_property name="ObjectShortName">done_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/us_to_cm_tb/dist_s" type="array">
+      <obj_property name="ElementShortName">dist_s[8:0]</obj_property>
+      <obj_property name="ObjectShortName">dist_s[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/us_to_cm_tb/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+</wave_config>
