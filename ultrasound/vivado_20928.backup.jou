@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon May  4 22:33:21 2026
+# Process ID         : 20928
+# Current directory  : C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent21440 C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.xpr
+# Log file           : C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/vivado.log
+# Journal file       : C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound\vivado.jou
+# Running On         : DESKTOP-DKUEKBV
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450HX
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16873 MB
+# Swap memory        : 4563 MB
+# Total Virtual      : 21436 MB
+# Available Virtual  : 6517 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_us_to_cm.tcl
+close_sim
+launch_simulation
+source tb_us_to_cm.tcl
+update_compile_order -fileset sim_1
+synth_design -top us_to_cm -part xc7a50ticsg324-1L -lint 
+close_sim
+launch_simulation

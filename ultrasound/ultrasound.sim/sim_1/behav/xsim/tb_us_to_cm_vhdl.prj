@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ultrasound.srcs/sources_1/new/us_to_cm.vhd" \
+"../../../../ultrasound.srcs/sim_1/new/us_to_cm_tb.vhd" \
+
+# Do not sort compile order
+nosort
