@@ -110,7 +110,7 @@ Screenshot z osciloskopu zachycující průběh trigger a echo signálů senzoru
 
 ## Video demonstrace
 
-[▶ Spustit video](video.mp4)
+[Spustit video](video.mp4)
 
 Video ukazuje funkční zařízení – měření vzdálenosti s výsledkem na 7-segmentovém displeji a indikací stavu pomocí LED.
 
@@ -118,8 +118,7 @@ Video ukazuje funkční zařízení – měření vzdálenosti s výsledkem na 7
 
 ## Resource Report
 
-> Sem vložte tabulku využití zdrojů ze syntézy v Vivadu (LUTs, FFs atd.).
-
+> 
 ---
 
 ## Použité nástroje
