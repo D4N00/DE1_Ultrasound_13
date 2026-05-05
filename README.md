@@ -1,6 +1,6 @@
 # Ultrazvukový měřič vzdálenosti – HC-SR04
 
-Projekt v rámci předmětu digitální návrh na FPGA (Nexys A7 50).  
+Projekt v rámci předmětu digitální elektronika 1 - návrh na FPGA (Nexys A7 50).  
 Měření vzdálenosti pomocí ultrazvukového senzoru HC-SR04 se zobrazením výsledku na 7-segmentovém displeji.
 
 ---
@@ -39,6 +39,7 @@ Zařízení vyšle ultrazvukový pulz pomocí senzoru HC-SR04, změří dobu ná
 
 - **FPGA deska:** Nexys A7 50 (Xilinx Artix-7)
 - **Senzor:** HC-SR04 (ultrazvukový, rozsah 2–400 cm)
+- **Level shifter:** převod úrovní mezi HC-SR04 (5v) a FPGA (3v3)
 
 ---
 
@@ -105,6 +106,7 @@ Kombinační modul převádí 9-bitové binární číslo na BCD formát (stovky
 ![Osciloskop](scope_1.png)
 
 Screenshot z osciloskopu zachycující průběh trigger a echo signálů senzoru HC-SR04 při reálném měření na desce.
+Čas echa 323us => (v*t)/2 => 6cm 
 
 ---
 
@@ -132,7 +134,7 @@ Video ukazuje funkční zařízení – měření vzdálenosti s výsledkem na 7
 ## Autoři
 
 - **Daniel Viskup** – [HC_SR04_CTL, HC_SR04_CTL_tb, us_to_cm, ultrasound_top]
-- **Vít Uhlíř** – [bin_to_bcd, bin_to_bcd_tb, dist_calc_tb, GitHub]
+- **Vít Uhlíř** – [bin_to_bcd, bin_to_bcd_tb, us_to_cm_tb, GitHub]
 
 ---
 
