@@ -120,7 +120,16 @@ Video ukazuje funkční zařízení – měření vzdálenosti s výsledkem na 7
 
 ## Resource Report
 
-> 
+Využití zdrojů na FPGA Nexys A7 50T :
+
+| Zdroj | Využito | Dostupné | Využití |
+|---|---|---|---|
+| Slice LUTs | 592 | 32 600 | 1,82 % |
+| Slice Registers (FF) | 182 | 65 200 | 0,28 % |
+| Block RAM | 0 | 75 | 0,00 % |
+| DSP | 0 | 120 | 0,00 % |
+| Bonded IOB | 24 | 210 | 11,43 % |
+| BUFGCTRL (clock) | 1 | 32 | 3,13 % |
 ---
 
 ## Použité nástroje
