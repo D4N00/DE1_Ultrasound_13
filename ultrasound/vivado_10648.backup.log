@@ -3,10 +3,10 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Tue May  5 11:52:22 2026
-# Process ID         : 12632
+# Start of session at: Mon May  4 22:51:23 2026
+# Process ID         : 10648
 # Current directory  : C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent8092 C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent21024 C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.xpr
 # Log file           : C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/vivado.log
 # Journal file       : C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound\vivado.jou
 # Running On         : DESKTOP-DKUEKBV
@@ -19,7 +19,7 @@
 # Host memory        : 16873 MB
 # Swap memory        : 4563 MB
 # Total Virtual      : 21436 MB
-# Available Virtual  : 7155 MB
+# Available Virtual  : 5609 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.xpr
@@ -75,6 +75,7 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu1525\1.3\board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.gen/sources_1'.
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
@@ -120,7 +121,6 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670\2.0\board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
@@ -131,11 +131,7 @@ WARNING: [Project 1-5713] Board part '' set for the project  is not found. Board
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
-open_project: Time (s): cpu = 00:00:38 ; elapsed = 00:00:27 . Memory (MB): peak = 1608.906 ; gain = 214.578
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 1617.195 ; gain = 189.973
 update_compile_order -fileset sources_1
-reset_project
-set_property top ultrasound_top [current_fileset]
-update_compile_order -fileset sources_1
-reset_project
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue May  5 11:55:02 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon May  4 22:52:20 2026...
