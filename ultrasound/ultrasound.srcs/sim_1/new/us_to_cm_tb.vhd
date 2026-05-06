@@ -58,18 +58,36 @@ begin
 
         -- 58 us = 1 cm
         time_us <= std_logic_vector(to_unsigned(58, 16));
-        start <= '1'; wait for TbPeriod; start <= '0';
-        wait until done = '1'; wait for TbPeriod;
+        start <= '1';
+        
+        wait for TbPeriod;
+        
+        start <= '0';
+        wait until done = '1';
+        
+        wait for TbPeriod;
 
         -- 580 us = 10 cm
         time_us <= std_logic_vector(to_unsigned(580, 16));
-        start <= '1'; wait for TbPeriod; start <= '0';
-        wait until done = '1'; wait for TbPeriod;
+        start <= '1';
+        
+        wait for TbPeriod;
+        
+        start <= '0';
+        wait until done = '1';
+        
+        wait for TbPeriod;
 
         -- 2900 us = 50 cm
         time_us <= std_logic_vector(to_unsigned(2900, 16));
-        start <= '1'; wait for TbPeriod; start <= '0';
-        wait until done = '1'; wait for TbPeriod;
+        start <= '1';
+        
+        wait for TbPeriod;
+        
+        start <= '0';
+        wait until done = '1';
+        
+        wait for TbPeriod;
 
         TbSimEnded <= '1';
         wait;

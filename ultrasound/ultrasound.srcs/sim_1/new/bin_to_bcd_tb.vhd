@@ -17,7 +17,10 @@ architecture tb of tb_bin_to_bcd is
     signal bin : std_logic_vector(8 downto 0);
     signal bcd : std_logic_vector(11 downto 0);
 begin
-    dut : bin_to_bcd port map (bin => bin, bcd => bcd);
+    dut : bin_to_bcd 
+    port map ( bin => bin,
+               bcd => bcd);
+    
 
     process
     begin
