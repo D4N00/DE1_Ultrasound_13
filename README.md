@@ -159,4 +159,4 @@ Využití zdrojů na FPGA Nexys A7 50T :
 
 ## Poster
 
-<embed src="poster.pdf" type="application/pdf" width="100%" height="600px" />
+![poster](poster_img.jpg)
