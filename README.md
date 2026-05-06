@@ -154,3 +154,9 @@ Využití zdrojů na FPGA Nexys A7 50T :
 
 - [HC-SR04 Datasheet](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf)
 - [Nexys A7 Reference Manual](https://digilent.com/reference/programmable-logic/nexys-a7/reference-manual)
+
+---
+
+## Poster
+
+[Zobrazit](poster.pdf)
