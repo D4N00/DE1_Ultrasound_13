@@ -1,3 +1,7 @@
+------------------------------------
+--optimalizace pomoci claude
+------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -31,8 +35,12 @@ architecture Behavioral of HC_SR04_CTL is
     type state_type is (IDLE, SEND_TRIG, WAIT_ECHO, CNT_ECHO, SEND_START_CONV);
     signal current_state : state_type;
 
-    signal clock_count : unsigned (31 downto 0); --integer range 
-    signal echo_i : unsigned (31 downto 0);
+    signal clock_count : unsigned (31 downto 0);
+    signal echo_i : unsigned (15 downto 0);         -- ZMĚNA: 32->16 bit, stačí pro max vzdálenost
+
+    -- PŘIDÁNO: interní signály pro čítání µs bez dělení
+    signal clk_div  : unsigned (6 downto 0);        -- čítač 0..99 (100 MHz -> 1 µs)
+    signal us_count : unsigned (15 downto 0);       -- výsledný čas v µs
     
 begin
     p_measure : process (clk)
@@ -45,6 +53,10 @@ begin
                 echo_time          <= (others => '0');  -- reset distance output
                 clock_count       <= (others => '0');                -- reset the counter
                 start_conv        <= '0';
+                -- PŘIDÁNO: reset nových signálů
+                clk_div           <= (others => '0');
+                us_count          <= (others => '0');
+                echo_i            <= (others => '0');
                 
             else
                 case current_state is
@@ -76,6 +88,9 @@ begin
 
                         if echo = '1' then
                             clock_count   <= (others => '0');         -- Reset clock count
+                            -- PŘIDÁNO: reset µs čítačů před měřením
+                            clk_div       <= (others => '0');
+                            us_count      <= (others => '0');
                             current_state <= CNT_ECHO;  -- move to CNT_ECHO state
                         end if;
                             
@@ -83,14 +98,21 @@ begin
                     when CNT_ECHO =>
                         
                         if echo = '1' then
-                            clock_count <= clock_count + 1; --increment the clock counter   
+                            -- ZMĚNA: místo počítání CLK cyklů a následného dělení
+                            -- počítáme přímo µs pomocí clk_div (0..99)
+                            if clk_div = 99 then
+                                clk_div  <= (others => '0');
+                                us_count <= us_count + 1;   -- každých 100 CLK = 1 µs
+                            else
+                                clk_div <= clk_div + 1;
+                            end if;
                         else
-                            --echo_i <= (others => '0');
-                            echo_i <= clock_count/(CLK_FREQ/1000000); -- distance is for now equal to echo round trip time in us
-                            --echo_time(15 downto 0) <=  std_logic_vector(echo_i(15 downto 0));
+                            -- echo skončil -> ulož výsledek, žádné dělení!
+                            echo_i        <= us_count;
+                            clk_div       <= (others => '0');
+                            us_count      <= (others => '0');
                             clock_count   <= (others => '0');   -- Reset clock count
                             current_state <= SEND_START_CONV;   -- move to SEND_START_CONV state
-                            --start_conv    <= '1';               -- start the conversion pulse
                             
                         end if; 
                     

@@ -151,3 +151,588 @@ Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // WARNING: HEventQueue.dispatchEvent() is taking  7469 ms.
 // Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'. 
 // [GUI Memory]: 142 MB (+6615kb) [00:00:50]
+// Project name: ultrasound; location: C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound; part: xc7a50ticsg324-1L
+// Tcl Message: open_project: Time (s): cpu = 00:00:51 ; elapsed = 00:00:24 . Memory (MB): peak = 1614.738 ; gain = 163.648 
+dismissDialog("Open Project"); // bk (Open Project Progress)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes", "No Implementation Results Available"); // f (RDIResource.BaseDialog_YES)
+dismissDialog("No Implementation Results Available"); // x (dialog0)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // f (RDIResource.BaseDialog_OK)
+// 'cU' command handler elapsed time: 6 seconds
+// HMemoryUtils.trashcanNow. Engine heap size: 1,014 MB. GUI used memory: 74 MB. Current time: 5/6/26, 2:06:50 PM CEST
+// TclEventType: PAUSE_COMPOSITE_FILE_CHANGE_GUI
+dismissDialog("Launch Runs"); // cX (dialog1)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: PAUSE_COMPOSITE_FILE_CHANGE_GUI
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Wed May  6 14:06:51 2026] Launched synth_1... Run output will be captured here: C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.runs/synth_1/runme.log [Wed May  6 14:06:51 2026] Launched impl_1... Run output will be captured here: C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bk (Generate Bitstream Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 73 MB. Current time: 5/6/26, 2:07:02 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 73 MB. Current time: 5/6/26, 2:07:42 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 73 MB. Current time: 5/6/26, 2:08:22 PM CEST
+// Elapsed time: 92 seconds
+applyEnter(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, (String) null); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [Engine Memory]: 1,031 MB (+12242kb) [00:03:01]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,031 MB. GUI used memory: 75 MB. Current time: 5/6/26, 2:08:41 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,031 MB. GUI used memory: 75 MB. Current time: 5/6/26, 2:09:03 PM CEST
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,032 MB. GUI used memory: 73 MB. Current time: 5/6/26, 2:09:43 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,032 MB. GUI used memory: 73 MB. Current time: 5/6/26, 2:10:23 PM CEST
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,032 MB. GUI used memory: 74 MB. Current time: 5/6/26, 2:11:04 PM CEST
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,032 MB. GUI used memory: 74 MB. Current time: 5/6/26, 2:11:44 PM CEST
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,032 MB. GUI used memory: 75 MB. Current time: 5/6/26, 2:12:24 PM CEST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 253 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Bitstream Generation Completed"); // f (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Tcl (Dont Echo) Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1367 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // x (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+dismissDialog("Open Hardware Manager"); // bk (Open Hardware Manager Progress)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (PAResourceOtoP.ProgramDebugTab_OPEN_TARGET)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ap (PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, auto_connect_target_menu)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2025.2   **** Build date : Oct 28 2025 at 10:03:13     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2025.2.0   ****** Build date   : Nov 14 2025-00:16:52     **** Build number : 2025.2.1763075812       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.       ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1664.410 ; gain = 4.906 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AA7E3BA 
+// Tcl Message: current_hw_device [get_hw_devices xc7a50t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported soft debug core(s) in it. 
+// [Engine Memory]: 1,133 MB (+53617kb) [00:07:21]
+// Elapsed time: 14 seconds
+dismissDialog("Auto Connect"); // bk (Auto Connect Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 80 MB. Current time: 5/6/26, 2:13:01 PM CEST
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMoreButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null, "Program Device"); // s (PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 81 MB. Current time: 5/6/26, 2:13:05 PM CEST
+// Elapsed time: 21 seconds
+setFileChooser("C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.runs/impl_1/ultrasound_top.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // f (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+dismissDialog("Program Device"); // aT (dialog3)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a50t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.runs/impl_1/ultrasound_top.bit} [get_hw_devices xc7a50t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a50t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported soft debug core(s) in it. 
+// 'D' command handler elapsed time: 30 seconds
+dismissDialog("Program Device"); // bk (Program Device Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,151 MB. GUI used memory: 81 MB. Current time: 5/6/26, 2:13:46 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,151 MB. GUI used memory: 80 MB. Current time: 5/6/26, 2:14:26 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,154 MB. GUI used memory: 80 MB. Current time: 5/6/26, 2:15:06 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,154 MB. GUI used memory: 80 MB. Current time: 5/6/26, 2:15:46 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,165 MB. GUI used memory: 80 MB. Current time: 5/6/26, 2:16:21 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,168 MB. GUI used memory: 82 MB. Current time: 5/6/26, 2:16:26 PM CEST
+// Elapsed time: 184 seconds
+selectButton((HResource) null, "RDIResource.FrameControlsPanel_CLOSE_Hardware"); // P.a (RDIResource.FrameControlsPanel_CLOSE_Hardware)
+// PAResourceOtoP.PAViews_HARDWARE: Hardware: close view
+selectButton((HResource) null, "RDIResource.FrameControlsPanel_CLOSE_Properties"); // P.a (RDIResource.FrameControlsPanel_CLOSE_Properties)
+// RDIResource.RDIViews_PROPERTIES: Hardware Device Properties: close view
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("CANCEL", "Cancel", "Add Sources"); // JButton (CANCEL)
+dismissDialog("Add Sources"); // d (dialog5)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (PAResourceTtoZ.TaskBanner_CLOSE)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+selectButton(RDIResource.BaseDialog_OK, "OK", "Confirm Close"); // f (RDIResource.BaseDialog_OK)
+dismissDialog("Confirm Close"); // x (dialog6)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bk (Close Hardware Manager Progress)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ultrasound_top(Behavioral) (ultrasound_top.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ultrasound_top(Behavioral) (ultrasound_top.vhd), debounce_inst : debounce(Behavioral) (debounce.vhd)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ultrasound_top(Behavioral) (ultrasound_top.vhd), us_to_cm_inst : us_to_cm(rtl) (us_to_cm.vhd)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ultrasound_top(Behavioral) (ultrasound_top.vhd), us_to_cm_inst : us_to_cm(rtl) (us_to_cm.vhd)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,182 MB. GUI used memory: 84 MB. Current time: 5/6/26, 2:17:07 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,182 MB. GUI used memory: 83 MB. Current time: 5/6/26, 2:17:47 PM CEST
+// Elapsed time: 58 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ultrasound_top(Behavioral) (ultrasound_top.vhd), bin_to_bcd_inst : bin_to_bcd(rtl) (bin_to_bcd.vhd)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ultrasound_top(Behavioral) (ultrasound_top.vhd), bin_to_bcd_inst : bin_to_bcd(rtl) (bin_to_bcd.vhd)]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("bin_to_bcd.vhd", 401, 167); // ae (bin_to_bcd.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "us_to_cm.vhd", 2); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// [GUI Memory]: 151 MB (+2315kb) [00:12:39]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,182 MB. GUI used memory: 84 MB. Current time: 5/6/26, 2:18:27 PM CEST
+// Elapsed time: 20 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // x (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ultrasound_top.vhd", 0); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "us_to_cm.vhd", 1); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,182 MB. GUI used memory: 84 MB. Current time: 5/6/26, 2:19:07 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,182 MB. GUI used memory: 85 MB. Current time: 5/6/26, 2:19:47 PM CEST
+// Elapsed time: 57 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ultrasound_top(Behavioral) (ultrasound_top.vhd), HC_SR04_CTL_inst : HC_SR04_CTL(Behavioral) (HC_SR04_CTL.vhd)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ultrasound_top(Behavioral) (ultrasound_top.vhd), HC_SR04_CTL_inst : HC_SR04_CTL(Behavioral) (HC_SR04_CTL.vhd)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ultrasound_top(Behavioral) (ultrasound_top.vhd), HC_SR04_CTL_inst : HC_SR04_CTL(Behavioral) (HC_SR04_CTL.vhd)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("HC_SR04_CTL.vhd", 262, 145); // ae (HC_SR04_CTL.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,182 MB. GUI used memory: 86 MB. Current time: 5/6/26, 2:20:27 PM CEST
+// Elapsed time: 22 seconds
+typeControlKey((HResource) null, "HC_SR04_CTL.vhd", 'c'); // ae (HC_SR04_CTL.vhd)
+typeControlKey((HResource) null, "HC_SR04_CTL.vhd", 'v'); // ae (HC_SR04_CTL.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 14m:17s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 14m:18s
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes", "Synthesis is Out-of-date"); // f (RDIResource.BaseDialog_YES)
+dismissDialog("Synthesis is Out-of-date"); // x (dialog7)
+// TclEventType: PAUSE_COMPOSITE_FILE_CHANGE_GUI
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: PAUSE_COMPOSITE_FILE_CHANGE_GUI
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.srcs/utils_1/imports/synth_1/ultrasound_top.dcp with file C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.runs/synth_1/ultrasound_top.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // f (RDIResource.BaseDialog_OK)
+// 'cU' command handler elapsed time: 8 seconds
+// HMemoryUtils.trashcanNow. Engine heap size: 1,182 MB. GUI used memory: 84 MB. Current time: 5/6/26, 2:21:02 PM CEST
+// TclEventType: PAUSE_COMPOSITE_FILE_CHANGE_GUI
+dismissDialog("Launch Runs"); // cX (dialog8)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: PAUSE_COMPOSITE_FILE_CHANGE_GUI
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: Operace byla dokončena úspěšně.  
+// Tcl Message: [Wed May  6 14:21:03 2026] Launched synth_1... Run output will be captured here: C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.runs/synth_1/runme.log [Wed May  6 14:21:03 2026] Launched impl_1... Run output will be captured here: C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.runs/impl_1/runme.log 
+// Tcl Message: ERROR: [Common 17-39] 'launch_runs' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_runs' failed due to earlier errors.  
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,182 MB. GUI used memory: 85 MB. Current time: 5/6/26, 2:21:08 PM CEST
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Launch Run Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Launch Run Critical Messages"); // bd (dialog9)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,188 MB. GUI used memory: 85 MB. Current time: 5/6/26, 2:21:46 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,188 MB. GUI used memory: 85 MB. Current time: 5/6/26, 2:21:48 PM CEST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,188 MB. GUI used memory: 86 MB. Current time: 5/6/26, 2:22:28 PM CEST
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,188 MB. GUI used memory: 85 MB. Current time: 5/6/26, 2:23:08 PM CEST
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,188 MB. GUI used memory: 86 MB. Current time: 5/6/26, 2:23:48 PM CEST
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,188 MB. GUI used memory: 87 MB. Current time: 5/6/26, 2:24:28 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,188 MB. GUI used memory: 87 MB. Current time: 5/6/26, 2:25:08 PM CEST
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 276 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Bitstream Generation Completed"); // f (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1011 ms.
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bk (Open Hardware Manager Progress)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (PAResourceOtoP.ProgramDebugTab_OPEN_TARGET)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,188 MB. GUI used memory: 89 MB. Current time: 5/6/26, 2:25:48 PM CEST
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ap (PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, auto_connect_target_menu)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2025.2   **** Build date : Oct 28 2025 at 10:03:13     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2025.2.0   ****** Build date   : Nov 14 2025-00:16:52     **** Build number : 2025.2.1763075812       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.       ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1777.219 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AA7E3BA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.runs/impl_1/ultrasound_top.bit} [get_hw_devices xc7a50t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a50t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported soft debug core(s) in it. 
+// Elapsed time: 13 seconds
+dismissDialog("Auto Connect"); // bk (Auto Connect Progress)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // f (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+dismissDialog("Program Device"); // aT (dialog11)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a50t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.runs/impl_1/ultrasound_top.bit} [get_hw_devices xc7a50t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a50t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported soft debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bk (Program Device Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,188 MB. GUI used memory: 91 MB. Current time: 5/6/26, 2:26:30 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,188 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:27:10 PM CEST
+// Elapsed time: 78 seconds
+selectCodeEditor("ultrasound_top.vhd", 308, 241); // ae (ultrasound_top.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HC_SR04_CTL.vhd", 3); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("HC_SR04_CTL.vhd", 424, 270); // ae (HC_SR04_CTL.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,188 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:27:50 PM CEST
+// Elapsed time: 37 seconds
+selectCodeEditor("HC_SR04_CTL.vhd", 424, 270); // ae (HC_SR04_CTL.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,188 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:28:30 PM CEST
+// Elapsed time: 25 seconds
+typeControlKey((HResource) null, "HC_SR04_CTL.vhd", 'c'); // ae (HC_SR04_CTL.vhd)
+typeControlKey((HResource) null, "HC_SR04_CTL.vhd", 'v'); // ae (HC_SR04_CTL.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 22m:41s
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 22m:43s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: Operace byla dokončena úspěšně.  
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 22m:45s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 22m:47s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,188 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:29:11 PM CEST
+// Elapsed time: 45 seconds
+typeControlKey((HResource) null, "HC_SR04_CTL.vhd", 'v'); // ae (HC_SR04_CTL.vhd)
+typeControlKey(null, null, 'z');
+// [Engine Memory]: 1,190 MB (+113kb) [00:24:01]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,191 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:29:51 PM CEST
+// Elapsed time: 34 seconds
+typeControlKey((HResource) null, "HC_SR04_CTL.vhd", 'c'); // ae (HC_SR04_CTL.vhd)
+typeControlKey((HResource) null, "HC_SR04_CTL.vhd", 'v'); // ae (HC_SR04_CTL.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:30:31 PM CEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 24m:45s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 24m:47s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: Operace byla dokončena úspěšně.  
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:31:11 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:31:51 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:32:31 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:33:11 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:33:51 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:34:31 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:35:11 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:35:52 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:36:32 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:37:12 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:37:52 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:38:32 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 92 MB. Current time: 5/6/26, 2:39:12 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 92 MB. Current time: 5/6/26, 2:39:52 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 92 MB. Current time: 5/6/26, 2:40:32 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 92 MB. Current time: 5/6/26, 2:41:12 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:41:52 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 92 MB. Current time: 5/6/26, 2:42:32 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 92 MB. Current time: 5/6/26, 2:43:12 PM CEST
+// Elapsed time: 803 seconds
+typeControlKey((HResource) null, "HC_SR04_CTL.vhd", 'c'); // ae (HC_SR04_CTL.vhd)
+typeControlKey((HResource) null, "HC_SR04_CTL.vhd", 'v'); // ae (HC_SR04_CTL.vhd)
+// [GUI Memory]: 163 MB (+3832kb) [00:38:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:43:52 PM CEST
+// Elapsed time: 27 seconds
+typeControlKey((HResource) null, "HC_SR04_CTL.vhd", 'c'); // ae (HC_SR04_CTL.vhd)
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "HC_SR04_CTL.vhd", 'v'); // ae (HC_SR04_CTL.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:44:32 PM CEST
+// Elapsed time: 40 seconds
+typeControlKey((HResource) null, "HC_SR04_CTL.vhd", 'v'); // ae (HC_SR04_CTL.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:45:12 PM CEST
+// Elapsed time: 25 seconds
+typeControlKey((HResource) null, "HC_SR04_CTL.vhd", 'v'); // ae (HC_SR04_CTL.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 39m:03s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: Operace byla dokončena úspěšně.  
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 39m:05s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: Operace byla dokončena úspěšně.  
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 39m:07s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 39m:09s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 39m:17s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 39m:19s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: Operace byla dokončena úspěšně.  
+// Elapsed time: 30 seconds
+selectCodeEditor("HC_SR04_CTL.vhd", 398, 245); // ae (HC_SR04_CTL.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 91 MB. Current time: 5/6/26, 2:45:53 PM CEST
+// Elapsed time: 20 seconds
+selectCodeEditor("HC_SR04_CTL.vhd", 451, 289); // ae (HC_SR04_CTL.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 39m:49s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 39m:51s
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes", "Synthesis is Out-of-date"); // f (RDIResource.BaseDialog_YES)
+// TclEventType: PAUSE_COMPOSITE_FILE_CHANGE_GUI
+dismissDialog("Synthesis is Out-of-date"); // x (dialog12)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: PAUSE_COMPOSITE_FILE_CHANGE_GUI
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.srcs/utils_1/imports/synth_1/ultrasound_top.dcp with file C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.runs/synth_1/ultrasound_top.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "12", 11); // d (PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // f (RDIResource.BaseDialog_OK)
+// 'cU' command handler elapsed time: 6 seconds
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:46:28 PM CEST
+// TclEventType: PAUSE_COMPOSITE_FILE_CHANGE_GUI
+dismissDialog("Launch Runs"); // cX (dialog13)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: PAUSE_COMPOSITE_FILE_CHANGE_GUI
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Wed May  6 14:46:28 2026] Launched synth_1... Run output will be captured here: C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.runs/synth_1/runme.log [Wed May  6 14:46:28 2026] Launched impl_1... Run output will be captured here: C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("HC_SR04_CTL.vhd", 562, 47); // ae (HC_SR04_CTL.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:46:34 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:47:14 PM CEST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:47:54 PM CEST
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 90 MB. Current time: 5/6/26, 2:48:34 PM CEST
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 92 MB. Current time: 5/6/26, 2:49:15 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 91 MB. Current time: 5/6/26, 2:49:55 PM CEST
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 234 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Bitstream Generation Completed"); // f (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Bitstream Generation Completed"); // W.a (dialog14)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // f (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // aT (dialog15)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a50t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.runs/impl_1/ultrasound_top.bit} [get_hw_devices xc7a50t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a50t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported soft debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bk (Program Device Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 91 MB. Current time: 5/6/26, 2:50:35 PM CEST
+// Elapsed time: 39 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // ab
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 93 MB. Current time: 5/6/26, 2:51:16 PM CEST
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 19); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 19); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 14); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 14); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Timing Summary]", 21, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Tcl Message: open_run impl_1 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,532 MB. GUI used memory: 92 MB. Current time: 5/6/26, 2:51:45 PM CEST
+// [Engine Memory]: 1,532 MB (+295910kb) [00:46:08]
+// Xgd.load filename: C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/.Xil/Vivado-3748-DESKTOP-DKUEKBV/xc7a50t_detail.xgd_2995 elapsed time: 1.5s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.6s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,888 MB (+293669kb) [00:46:13]
+// [GUI Memory]: 182 MB (+12067kb) [00:46:14]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1703 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a50ticsg324-1L 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1979.418 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2025.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2060.781 ; gain = 0.000 
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. INFO: [Designutils 20-5722] Start Reading Physical Databases. 
+// Tcl Message: Reading placement. 
+// Tcl Message: Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2658.039 ; gain = 0.000 
+// Tcl Message: Reading placer database... 
+// Tcl Message: Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2658.039 ; gain = 0.000 Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2658.039 ; gain = 0.000 Read placeStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2658.039 ; gain = 0.000 Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2658.039 ; gain = 0.000 
+// Tcl Message: Reading routing. 
+// Tcl Message: Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2658.039 ; gain = 0.000 Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.098 . Memory (MB): peak = 2658.039 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.102 . Memory (MB): peak = 2658.039 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2658.039 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: CURR_DESIGN_SET
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Device view-level: 0,0
+// Tcl Message: open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 3018.918 ; gain = 1235.871 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// [Engine Memory]: 2,021 MB (+40038kb) [00:46:16]
+// Device view-level: 0,0
+// Elapsed time: 22 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Report Timing Summary"); // f (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Report Timing Summary"); // ag (dialog16)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,029 MB. GUI used memory: 130 MB. Current time: 5/6/26, 2:51:56 PM CEST
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // J (dialog17)
+// Elapsed time: 16 seconds
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Check Timing]", 5); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Check Timing, no_input_delay]", 10, false); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Check Timing, no_output_delay]", 11, false); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+collapseTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Check Timing]", 5); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Check Timing]", 5); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,032 MB. GUI used memory: 128 MB. Current time: 5/6/26, 2:52:36 PM CEST
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 18); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, sys_clk_pin]", 19); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, sys_clk_pin, Setup -2,148 ns]", 20, false); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+// [GUI Memory]: 201 MB (+10433kb) [00:47:06]
+selectTableHeader(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Levels", 2); // e.b (PAResourceTtoZ.TimingItemFlatTablePanel_TABLE)
+selectTableHeader(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Slack", 1); // e.b (PAResourceTtoZ.TimingItemFlatTablePanel_TABLE)
+// Elapsed time: 11 seconds
+selectTab((HResource) null, (HResource) null, "Power", 7); // ab
+selectTab((HResource) null, (HResource) null, "Timing", 8); // ab
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,032 MB. GUI used memory: 128 MB. Current time: 5/6/26, 2:53:16 PM CEST
+// Elapsed time: 10 seconds
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Clock Summary]", 3, false); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Methodology Summary]", 4, false); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+// Elapsed time: 16 seconds
+collapseTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Check Timing]", 5); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+collapseTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 6); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+// Elapsed time: 16 seconds
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 6); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,032 MB. GUI used memory: 128 MB. Current time: 5/6/26, 2:53:56 PM CEST
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, sys_clk_pin, Setup -2,148 ns]", 8, false); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,032 MB. GUI used memory: 129 MB. Current time: 5/6/26, 2:54:37 PM CEST
+// Elapsed time: 42 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ultrasound_top.vhd", 2); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HC_SR04_CTL.vhd", 5); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("HC_SR04_CTL.vhd", 531, 83); // ae (HC_SR04_CTL.vhd)
+typeControlKey((HResource) null, "HC_SR04_CTL.vhd", 'c'); // ae (HC_SR04_CTL.vhd)
+// Elapsed time: 13 seconds
+selectCodeEditor("HC_SR04_CTL.vhd", 289, 128); // ae (HC_SR04_CTL.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,033 MB. GUI used memory: 130 MB. Current time: 5/6/26, 2:55:17 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,033 MB. GUI used memory: 130 MB. Current time: 5/6/26, 2:55:57 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,033 MB. GUI used memory: 130 MB. Current time: 5/6/26, 2:56:38 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,033 MB. GUI used memory: 130 MB. Current time: 5/6/26, 2:57:18 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,033 MB. GUI used memory: 130 MB. Current time: 5/6/26, 2:57:59 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,033 MB. GUI used memory: 130 MB. Current time: 5/6/26, 2:58:39 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,033 MB. GUI used memory: 130 MB. Current time: 5/6/26, 2:59:20 PM CEST
+// Elapsed time: 278 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // ab
+// Tcl (Dont Echo) Command: 'rdi::info_commands {re*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {res*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {rese*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {reset*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {reset_*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {reset_pr*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {reset_pro*}'
+// Elapsed time: 10 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "reset_project", true); // h.b (RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE)
+// Tcl Command: 'reset_project'
+// TclEventType: PAUSE_COMPOSITE_FILE_CHANGE_GUI
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PAUSE_COMPOSITE_FILE_CHANGE_GUI
+// Tcl Message: reset_project 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // h.b (RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE)

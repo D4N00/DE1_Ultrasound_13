@@ -55,3 +55,12 @@ update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 12
 wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.runs/impl_1/ultrasound_top.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+open_run impl_1
+reset_project
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
