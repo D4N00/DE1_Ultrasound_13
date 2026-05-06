@@ -159,4 +159,4 @@ Využití zdrojů na FPGA Nexys A7 50T :
 
 ## Poster
 
-![Zobrazit](poster.pdf)
+![poster](poster.pdf)
