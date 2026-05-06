@@ -3,10 +3,10 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Wed May  6 10:59:21 2026
-# Process ID         : 9512
+# Start of session at: Wed May  6 14:00:41 2026
+# Process ID         : 21440
 # Current directory  : C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent17148 C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent8628 C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.xpr
 # Log file           : C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/vivado.log
 # Journal file       : C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound\vivado.jou
 # Running On         : DESKTOP-DKUEKBV
@@ -19,7 +19,7 @@
 # Host memory        : 16873 MB
 # Swap memory        : 4563 MB
 # Total Virtual      : 21436 MB
-# Available Virtual  : 7407 MB
+# Available Virtual  : 14919 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.xpr
@@ -81,12 +81,10 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.1\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385_1:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385_2\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_mpsoc\1.0\board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.gen/sources_1'.
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_rfsoc\1.0\board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.ip_user_files'.
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
@@ -122,6 +120,8 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670\2.0\board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.gen/sources_1'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.ip_user_files'.
 Scanning sources...
 Finished scanning sources
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
@@ -132,19 +132,10 @@ WARNING: [Project 1-5713] Board part '' set for the project  is not found. Board
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
-open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 1643.070 ; gain = 205.457
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1658.816 ; gain = 185.156
 update_compile_order -fileset sources_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.srcs\sim_1\new\bin_to_bcd_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.srcs\sim_1\new\us_to_cm_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.srcs\sim_1\new\us_to_cm_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.srcs\sim_1\new\us_to_cm_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.srcs\sim_1\new\bin_to_bcd_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.srcs\sim_1\new\us_to_cm_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.srcs\sim_1\new\us_to_cm_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.srcs\sim_1\new\us_to_cm_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.srcs\sim_1\new\bin_to_bcd_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.srcs\sim_1\new\us_to_cm_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.srcs\sim_1\new\us_to_cm_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.srcs\sim_1\new\us_to_cm_tb.vhd:]
+project_clear
+invalid command name "project_clear"
+reset_project
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed May  6 11:01:48 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed May  6 14:02:28 2026...
