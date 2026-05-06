@@ -113,6 +113,7 @@ Screenshot z osciloskopu zachycující průběh trigger a echo signálů senzoru
 ## Video demonstrace
 
 [Spustit video](video.mp4)
+
 <img alt="video.gif" src="https://github.com/D4N00/DE1_Ultrasound_13/blob/main/video.gif" />
 
 
