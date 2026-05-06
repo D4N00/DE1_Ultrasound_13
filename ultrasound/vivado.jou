@@ -3,10 +3,10 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Wed May  6 14:00:41 2026
-# Process ID         : 21440
+# Start of session at: Wed May  6 14:05:29 2026
+# Process ID         : 3748
 # Current directory  : C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent8628 C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent11724 C:\Users\uhliv\Desktop\DE1\DE1_Ultrasound_13\ultrasound\ultrasound.xpr
 # Log file           : C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/vivado.log
 # Journal file       : C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound\vivado.jou
 # Running On         : DESKTOP-DKUEKBV
@@ -19,10 +19,39 @@
 # Host memory        : 16873 MB
 # Swap memory        : 4563 MB
 # Total Virtual      : 21436 MB
-# Available Virtual  : 14919 MB
+# Available Virtual  : 11903 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.xpr
 update_compile_order -fileset sources_1
-project_clear
-reset_project
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.runs/impl_1/ultrasound_top.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.runs/impl_1/ultrasound_top.bit} [get_hw_devices xc7a50t_0]
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/uhliv/Desktop/DE1/DE1_Ultrasound_13/ultrasound/ultrasound.runs/impl_1/ultrasound_top.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1

@@ -85,23 +85,28 @@ begin
                         if echo = '1' then
                             clock_count <= clock_count + 1; --increment the clock counter   
                         else
+                            --echo_i <= (others => '0');
                             echo_i <= clock_count/(CLK_FREQ/1000000); -- distance is for now equal to echo round trip time in us
-                            echo_time(15 downto 0) <=  std_logic_vector(echo_i(15 downto 0));
+                            --echo_time(15 downto 0) <=  std_logic_vector(echo_i(15 downto 0));
                             clock_count   <= (others => '0');   -- Reset clock count
                             current_state <= SEND_START_CONV;   -- move to SEND_START_CONV state
-                            start_conv    <= '1';               -- start the conversion pulse
+                            --start_conv    <= '1';               -- start the conversion pulse
                             
                         end if; 
                     
                     -- SEND_START_CONV: Trigger the conversion module with a 10+us pulse    
                     when SEND_START_CONV =>  
+                        
+                        clock_count <= clock_count + 1;     --increment the clock counter
                           
-                        if clock_count  >=  1 then
+                        if clock_count  >=  12 then
                             start_conv    <= '0';               -- end the conversion pulse
                             clock_count   <= (others => '0');   -- Reset clock count
                             current_state <= IDLE;              -- move to IDLE state
-                        else
-                            clock_count <= clock_count + 1;     --increment the clock counter
+                        elsif clock_count  >=  10 then
+                            start_conv    <= '1';               -- start the conversion pulse
+                        elsif clock_count  =  4 then
+                            echo_time(15 downto 0) <=  std_logic_vector(echo_i(15 downto 0));
                         end if; 
                         
                     -- Default: In case of an unexpected state, return to IDLE
