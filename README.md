@@ -114,7 +114,7 @@ Screenshot z osciloskopu zachycující průběh trigger a echo signálů senzoru
 
 [Spustit video](video.mp4)
 
-<video src='video.mp4'></video>
+[<video src='video.mp4](https://github.com/D4N00/DE1_Ultrasound_13/blob/main/video.mp4)
 
 Video ukazuje funkční zařízení – měření vzdálenosti s výsledkem na 7-segmentovém displeji a indikací stavu pomocí LED.
 
