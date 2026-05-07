@@ -127,8 +127,8 @@ Využití zdrojů na FPGA Nexys A7 50T :
 
 | Zdroj | Využito | Dostupné | Využití |
 |---|---|---|---|
-| Slice LUTs | 592 | 32 600 | 1,82 % |
-| Slice Registers (FF) | 182 | 65 200 | 0,28 % |
+| Slice LUTs | 189 | 32 600 | 0,58 % |
+| Slice Registers (FF) | 205 | 65 200 | 0,31 % |
 | Block RAM | 0 | 75 | 0,00 % |
 | DSP | 0 | 120 | 0,00 % |
 | Bonded IOB | 24 | 210 | 11,43 % |
